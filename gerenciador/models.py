@@ -142,5 +142,5 @@ class NPC(models.Model):
   cidade_natal = models.ForeignKey(Lugar, on_delete=models.PROTECT, null=True, blank=True, related_name="npcs_nascidos_aqui")
   local_atual = models.ForeignKey(Lugar, on_delete=models.PROTECT, null=True, blank=True, related_name="npcs_presentes_aqui")
 
-def __str__(self):
-        return self.nome
+  def __str__(self):
+    return self.nome
